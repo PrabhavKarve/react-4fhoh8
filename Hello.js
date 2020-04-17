@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './style.css';
 import Greet from './components/Greet';
 import Greetclass from './components/Greetclass';
-class App extends Component, Greetclass  {
+import Message from './components/message';
+class App extends Component, Greetclass, Message{
 
   render() {
     return (
       <div>
-      <Greet/>
-      <Greetclass/>
+        <Message/>
       </div>
     );
   }
