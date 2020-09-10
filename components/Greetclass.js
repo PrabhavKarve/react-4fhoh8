@@ -2,14 +2,22 @@ import React, { Component } from 'react'
 
 class Greetclass extends Component {
 
+  constructor(props){
+    super(props)
+
+    this.state = {
+      islogged: true
+    }
+  }
+
   render() {
-    return (
-      <div>
-        <p>Welcome, this is class component</p>
-      </div>
-    );
+    const names = ['a','b','c']
+    const namelist = names.map(name => <h2>{name}</h2>)
+    return(
+      <div>{namelist}</div>
+    )
   }
 }
 
 
-export default Greetclass
+export default Greetclass;
