@@ -6,7 +6,7 @@ class App extends Component, Greetclass, Message{
   render() {
     return (
       <div>
-        <Greet></Greet>
+        <Greet primary = {false}></Greet>
       </div>
     );
   }
