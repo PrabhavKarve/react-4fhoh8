@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './style.css';
-import Greet from './components/Greetclass';
+import Greet from './components/postreq';
 class App extends Component, Greetclass, Message{
 
   render() {
     return (
       <div>
-        <Greet primary = {false}></Greet>
+        <Greet></Greet>
       </div>
-    );
+    )
   }
 }
 
